@@ -1,4 +1,4 @@
-https://travis-ci.org/faizanbashir/docker-nginx.svg?branch=master
+[![Build Status](https://travis-ci.org/faizanbashir/docker-nginx.svg?branch=master)](https://travis-ci.org/faizanbashir/docker-nginx)
 
 # Docker Nginx #
 
