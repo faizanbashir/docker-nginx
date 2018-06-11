@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:  
+  - docker run -d -i -t faizanbashir/nginx:latest /bin/bash
+  - docker ps
