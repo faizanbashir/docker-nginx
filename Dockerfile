@@ -10,6 +10,10 @@ RUN apk --update add nginx && \
     touch /var/www/favicon.ico && \
     rm -rf /var/cache/apk/*
 
+RUN adduser -D -g 'www-data' www-data && \
+    chown -R www-data:www-data /var/lib/nginx && \
+    chown -R www-data:www-data /var/www/html
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/sites-enabled/default.conf
 COPY index.html /var/www/index.html
