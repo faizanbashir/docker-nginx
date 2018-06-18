@@ -1,4 +1,4 @@
-FROM faizanbashir/docker-alpine:3.7
+FROM faizanbashir/alpine:3.7
 LABEL MAINTAINER="Faizan Bashir <faizan.ibn.bashir@gmail.com>"
 
 RUN apk --update add nginx && \
