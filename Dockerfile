@@ -14,9 +14,5 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/sites-enabled/default.conf
 COPY index.html /var/www/index.html
 
-RUN adduser -D -g 'www-data' www-data && \
-    chown -R www-data:www-data /var/lib/nginx && \
-    chown -R www-data:www-data /var/www/html
-
 EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
