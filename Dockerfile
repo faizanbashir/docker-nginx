@@ -11,7 +11,7 @@ RUN apk --update add nginx && \
     rm -rf /var/cache/apk/*
 
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY default.conf /etc/nginx/sites-enabled/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 COPY index.html /var/www/index.html
 
 EXPOSE 80 443
